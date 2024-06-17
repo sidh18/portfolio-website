@@ -1182,7 +1182,7 @@
    * responsive larger than 580px screen
    */
   
-  @media (min-width: 450px) {
+  @media (min-width: 250px) {
   
     /**
      * CUSTOM PROPERTY
