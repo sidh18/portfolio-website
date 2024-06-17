@@ -618,7 +618,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow-y: auto;
     overscroll-behavior: auto;
     z-index: 20;
     pointer-events: none;
@@ -1182,7 +1182,7 @@
    * responsive larger than 580px screen
    */
   
-  @media (min-width: 580px) {
+  @media (min-width: 450px) {
   
     /**
      * CUSTOM PROPERTY
@@ -1337,9 +1337,11 @@
       margin: 0 -30px;
       padding: 30px;
       padding-bottom: 35px;
+      
     }
   
     .content-card {
+      
       padding: 30px;
       padding-top: 25px;
     }
@@ -1349,7 +1351,9 @@
       border-radius: 20px;
     }
   
-    .experience-avatar-box img { width: 80px; }
+    .experience-avatar-box img { max-width: 80px;
+      height: auto;
+      }
   
     .experience-item-title {
       margin-bottom: 10px;
@@ -1388,9 +1392,9 @@
     .modal-avatar-box img { width: 65px; }
   
     .modal-img-wrapper > img {
-      display: block;
-      flex-grow: 1;
-      width: 35px;
+      display: flex;
+      flex-grow: 2;
+      width: 5px;
     }
   
     /* clients */
